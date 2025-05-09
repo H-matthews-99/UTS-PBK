@@ -83,5 +83,112 @@ function hapusKomik(id) {
 
 
 <style scoped>
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: #333;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+
+input[type="text"],
+input[type="checkbox"],
+input[type="email"] {
+  font-size: 16px;
+  font-family: inherit;
+}
+
+
+.form input[type="text"] {
+  width: calc(100% - 120px);
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.form input[type="text"]:focus {
+  border-color: #e5a700;
+  box-shadow: 0 0 8px rgba(248, 181, 0, 0.3);
+  outline: none;
+}
+
+
+button {
+  padding: 12px 20px;
+  background-color: #f8b500;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e5a700;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #d68a00;
+  transform: translateY(2px);
+}
+
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #f8b500;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.komik-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.komik-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.komik-card:hover {
+  background-color: #fff5d1;
+}
+
+.komik-card .selesai {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+.filter {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
 
 </style>
